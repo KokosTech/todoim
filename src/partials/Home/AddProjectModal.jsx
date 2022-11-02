@@ -25,7 +25,7 @@ const AddProjectModal = ({ isOpen, onClose }) => {
 
     if (error.name === null || error.description === null) setAll();
 
-    if (error.name === false && !error.description === false) {
+    if (error.name === false && error.description === false) {
       setProject({
         ...project,
         id: Date.now(),
